@@ -1,0 +1,12 @@
+.aside {
+    display: flex;
+    width: 25%;
+    gap: 2rem;
+    flex-direction: column;
+
+    &__video {
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+    }
+}

@@ -1,4 +1,8 @@
 @use "./abstracts/reset";
 @use "./abstracts/base";
 @use "./components/main/main.scss";
+@use "./components/yubtub/yubtub.scss";
+@use "./components/video/video.scss";
+@use "./components/comments/comments.scss";
 @use "./components/aside/aside.scss";
+@use "./abstracts/mixins";

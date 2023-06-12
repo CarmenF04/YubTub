@@ -1,0 +1,38 @@
+.comments {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1.5rem;
+    
+
+    &__comment {
+        background-color: #eee;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 2rem;
+        gap: 2rem;
+        font-size: 2rem;
+        color: black;
+    }
+
+    &__uploader {
+        width: 7rem;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+    }
+
+    &__comment--add {
+        height: 10rem;
+    }
+
+    &__input {
+        width: 80%;
+        height: 100%;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        padding-left: 2rem;
+        color: black;
+    }
+}
