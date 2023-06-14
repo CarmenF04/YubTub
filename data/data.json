@@ -1,15 +1,31 @@
 {
-    "data":[
+    "videos":[
         {
-            "id": 0,
+            "id": 1,
             "video": "video1.mp4",
-            "link": 1
+            "title": "Water waves",
+            "comments": [
+                "Nice water",
+                "Blub fish go brrr"
+            ],
+
+            "recommend": [
+                "video2.mp4"
+            ]
         },
 
         {
             "id": 1,
             "video": "video2.mp4",
-            "link": 2
+            "title": "Water 2.0",
+            "comments": [
+                "Watuh",
+                "Wee waaa"
+            ],
+
+            "recommend": [
+                "video1.mp4"
+            ]
         }
     ]
 }

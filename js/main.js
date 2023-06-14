@@ -1,47 +1,53 @@
 class App {
+    api;
     switcher;
-    data = [
-        // {
-        //     id: 0,
-        //     video: "video1.mp4",
-        //     link: 1
-
-        // },
-        // {
-        //     id: 1,
-        //     video: "video2.mp4",
-        //     link: 2
-        // }
-    ]
-
+  
     constructor() {
-        this.switcher = new Switcher(this, this.data);
+      this.api = new Api("../data/data.json");
+  
+      this.api.getData().then((data) => {
+        this.switcher = new Switcher(this, data);
+      });
     }
-}
+  }
 
-class Api {
+  class Api {
+    url = "";
+    data = null;
+  
+    constructor(newURL) {
+      this.url = newURL;
+    }
+  
+    async getData() {
+      if (this.data === null) {
+        await fetch(this.url)
+          .then(function (response) {
+            return response.json();
+          })
+          .then((data) => {
+            this.data = data;
+          });
+      }
+      return this.data;
+    }
+  }
 
-}
-
-class Switcher {
+  class Switcher {
+    app;
+    data;
     yubtub;
     cleaner;
-    app;
     default = 0;
-
+  
     constructor(app, data) {
-        this.app = app;
-        this.data = data;
-        this.yubtub = new Yubtub(this.app, data[this.default]);
-        this.cleaner = new Cleaner();
+      this.app = app;
+      this.data = data.videos[this.default];
+  
+      this.yubtub = new Yubtub(this.app, this.data);
+      this.cleaner = new Cleaner();
     }
-
-    switch(link) {
-        this.cleaner.clean("body");
-        this.yubtub = new Yubtub(this.app, this.data[link]);
-
-    }
-}
+  }
 
 class Cleaner {
     clean(whereToClean) {
