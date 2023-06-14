@@ -71,12 +71,12 @@ body {
   background: none;
   border: 0;
   padding: 0;
-  color: black;
+  color: #606060;
 }
 .video__button--star {
   font-size: 3rem;
 }
-.video__button--arrow {
+.video__button--arrowUp {
   font-size: 3rem;
 }
 

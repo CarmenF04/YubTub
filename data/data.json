@@ -1,31 +1,33 @@
 {
-    "videos":[
-        {
-            "id": 1,
-            "video": "video1.mp4",
-            "title": "Water waves",
-            "comments": [
-                "Nice water",
-                "Blub fish go brrr"
-            ],
-
-            "recommend": [
-                "video2.mp4"
-            ]
-        },
-
-        {
-            "id": 1,
-            "video": "video2.mp4",
-            "title": "Water 2.0",
-            "comments": [
-                "Watuh",
-                "Wee waaa"
-            ],
-
-            "recommend": [
-                "video1.mp4"
-            ]
-        }
+    "videos": [
+      {
+        "id": 0,
+        "link": 1,
+        "title": "Video 1",
+        "video": "video1.mp4",
+        "comments": [
+          "WOah",
+          "WOAHHHHHHHH",
+          "WOWOWOWOWW"
+        ],
+        "recommend": [
+          "video2.mp4"
+        ]
+      },
+      {
+        "id": 1,
+        "link": 1,
+        "title": "Video 2",
+        "video": "video2.mp4",
+        "comments": [
+          "nicee man",
+          "sickk",
+          "UWU"
+        ],
+        "recommend": [
+          "video1.mp4"
+        ]
+      }
     ]
-}
+  }
+  
