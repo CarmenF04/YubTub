@@ -12,6 +12,8 @@ html {
 
 body {
   font-size: 2rem;
+  background: #262626;
+  font-family: "Poppins", sans-serif;
 }
 
 .main {
@@ -38,13 +40,17 @@ body {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
+  border: 0.5rem solid #6441a5;
+}
+.video__player:hover {
+  cursor: pointer;
 }
 .video__bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  background-color: #b2b1b1;
+  background-color: #444444;
   padding: 2rem;
 }
 .video__details {
@@ -58,9 +64,14 @@ body {
   width: 7rem;
   aspect-ratio: 1/1;
   border-radius: 50%;
+  border: 0.5rem solid #6441a5;
+}
+.video__uploader:hover {
+  cursor: pointer;
 }
 .video__title {
   font-size: 2.2rem;
+  color: #eee;
 }
 .video__controls {
   display: flex;
@@ -76,8 +87,10 @@ body {
 .video__button--star {
   font-size: 3rem;
 }
-.video__button--arrowUp {
-  font-size: 3rem;
+.video__button--star:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  color: white;
 }
 
 .comments {
@@ -87,19 +100,32 @@ body {
   gap: 1.5rem;
 }
 .comments__comment {
-  background-color: #eee;
+  background-color: #444444;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 2rem;
   gap: 2rem;
   font-size: 2rem;
-  color: black;
+  color: #eee;
 }
 .comments__uploader {
   width: 7rem;
   aspect-ratio: 1/1;
   border-radius: 50%;
+}
+.comments__button {
+  width: 20rem;
+  height: 5rem;
+  border-radius: 10rem;
+  background: #b9a3e3;
+  border: none;
+}
+.comments__button:hover {
+  background: #6441a5;
+  transition: 0.3s;
+  cursor: pointer;
+  color: white;
 }
 .comments__comment--add {
   height: 10rem;
@@ -111,7 +137,7 @@ body {
   border: none;
   font-size: 2rem;
   padding-left: 2rem;
-  color: black;
+  color: #eee;
 }
 
 .aside {
@@ -124,6 +150,10 @@ body {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
+  border: 0.3rem solid #6441a5;
+}
+.aside__video:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

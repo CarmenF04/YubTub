@@ -5,6 +5,10 @@
         width: 100%;
         aspect-ratio: 16/9;
         object-fit: cover;
+        border: 0.5rem solid #6441a5;
+        &:hover{
+            cursor: pointer;
+        }
     }
 
     &__bar {
@@ -12,7 +16,7 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
-        background-color: #b2b1b1;
+        background-color: #444444;
         padding: 2rem;
     }
 
@@ -28,11 +32,18 @@
         width: 7rem;
         aspect-ratio: 1/1;
         border-radius: 50%;
+        border: 0.5rem solid #6441a5;
+
+        &:hover{
+            cursor: pointer;
+        }
+
     }
 
     &__title {
         font-size: 2.2rem;
-    }
+        color: #eee;
+        }
 
     &__controls {
         display: flex;
@@ -48,10 +59,11 @@
 
         &--star {
             font-size: 3rem;
-        }
-
-        &--arrowUp {
-            font-size: 3rem;
+            &:hover{
+                transition: 0.3s;
+                cursor: pointer;
+                color: white;
+            }
         }
     }
 }

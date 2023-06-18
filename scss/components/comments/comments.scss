@@ -6,20 +6,35 @@
     
 
     &__comment {
-        background-color: #eee;
+        background-color: #444444;
         display: flex;
         flex-direction: row;
         align-items: center;
         padding: 2rem;
         gap: 2rem;
         font-size: 2rem;
-        color: black;
+        color: #eee;
     }
 
     &__uploader {
         width: 7rem;
         aspect-ratio: 1/1;
         border-radius: 50%;
+    }
+
+    &__button{
+        width: 20rem;
+        height: 5rem;
+        border-radius: 10rem;
+        background: #b9a3e3;
+        border: none;
+
+        &:hover{
+            background: #6441a5;
+            transition: 0.3s;
+            cursor: pointer;
+            color: white;
+        }
     }
 
     &__comment--add {
@@ -33,6 +48,6 @@
         border: none;
         font-size: 2rem;
         padding-left: 2rem;
-        color: black;
+        color: #eee;
     }
 }
