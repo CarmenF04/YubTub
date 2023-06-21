@@ -1,32 +1,33 @@
 .video {
     position: relative;
 
-    &__player {
-        width: 100%;
-        aspect-ratio: 16/9;
-        object-fit: cover;
-        border: 0.5rem solid #6441a5;
+    &__main {
+    aspect-ratio: 16/9;
+    width: 100%;
+    object-fit: cover;
+    border: 0.5rem solid #6441a5;
+
         &:hover{
             cursor: pointer;
         }
     }
 
-    &__bar {
+    &__channel {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        flex-direction: row;
         background-color: #444444;
         padding: 2rem;
-    }
-
-    &__details {
+      }
+      
+      &__details {
         display: flex;
         flex-direction: row;
-        height: 10rem;
         align-items: center;
+        height: 10rem;
         gap: 2rem;
-    }
+      }      
 
     &__uploader {
         width: 7rem;

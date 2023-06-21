@@ -111,22 +111,22 @@ class App {
       this.videoElement.classList.add("video");
       this.yubtub.renderer.render(".yubtub", this.videoElement);
   
-      this.videoplayerElement = document.createElement("video");
-      this.videoplayerElement.src = "../videos/" + this.data.video;
-      this.videoplayerElement.classList = "video__player";
-      this.videoplayerElement.controls = true;
-      this.yubtub.renderer.render(".video", this.videoplayerElement);
+      this.videoMainElement = document.createElement("video");
+      this.videoMainElement.src = "../videos/" + this.data.video;
+      this.videoMainElement.classList = "video__main";
+      this.videoMainElement.controls = true;
+      this.yubtub.renderer.render(".video", this.videoMainElement);
   
-      this.videobarElement = document.createElement("div");
-      this.videobarElement.classList = "video__bar";
-      this.yubtub.renderer.render(".video", this.videobarElement);
+      this.videoChannelElement = document.createElement("div");
+      this.videoChannelElement.classList = "video__channel";
+      this.yubtub.renderer.render(".video", this.videoChannelElement);
   
       this.videodetailsElement = document.createElement("div");
       this.videodetailsElement.classList = "video__details";
-      this.yubtub.renderer.render(".video__bar", this.videodetailsElement);
+      this.yubtub.renderer.render(".video__channel", this.videodetailsElement);
   
       this.uploaderprofileElement = document.createElement("img");
-      this.uploaderprofileElement.src = "/img/pfp3.jpg";
+      this.uploaderprofileElement.src = "/img/pfp3.webp";
       this.uploaderprofileElement.alt = "Profile Picture";
       this.uploaderprofileElement.classList = "video__uploader";
       this.yubtub.renderer.render(".video__details", this.uploaderprofileElement);
@@ -138,7 +138,7 @@ class App {
   
       this.videocontrolsElement = document.createElement("div");
       this.videocontrolsElement.classList = "video__controls";
-      this.yubtub.renderer.render(".video__bar", this.videocontrolsElement);
+      this.yubtub.renderer.render(".video__channel", this.videocontrolsElement);
   
       this.starbuttonElement = document.createElement("button");
       this.starbuttonElement.classList =
@@ -178,7 +178,7 @@ class App {
         this.commentElement.classList = "comments__comment";
   
         this.profileImageElement = document.createElement("img");
-        this.profileImageElement.src = "/img/pfp2.jpg";
+        this.profileImageElement.src = "/img/pfp2.webp";
         this.profileImageElement.alt = "Profile Picture";
         this.profileImageElement.classList = "comments__uploader";
         this.commentElement.appendChild(this.profileImageElement);
@@ -235,7 +235,7 @@ class App {
         newComment.classList.add("comments__comment");
   
         const profileImg = document.createElement("img");
-        profileImg.src = "/img/pfp1.jpg";
+        profileImg.src = "/img/pfp1.webp";
         profileImg.alt = "Profile Picture";
         profileImg.classList.add("comments__uploader");
   

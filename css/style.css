@@ -36,28 +36,28 @@ body {
 .video {
   position: relative;
 }
-.video__player {
-  width: 100%;
+.video__main {
   aspect-ratio: 16/9;
+  width: 100%;
   object-fit: cover;
   border: 0.5rem solid #6441a5;
 }
-.video__player:hover {
+.video__main:hover {
   cursor: pointer;
 }
-.video__bar {
+.video__channel {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
   background-color: #444444;
   padding: 2rem;
 }
 .video__details {
   display: flex;
   flex-direction: row;
-  height: 10rem;
   align-items: center;
+  height: 10rem;
   gap: 2rem;
 }
 .video__uploader {
@@ -154,6 +154,55 @@ body {
 }
 .aside__video:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    padding: 4rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main {
+    padding: 3rem;
+  }
+  .video__title {
+    font-size: 1.7rem;
+  }
+  .video__button--star {
+    font-size: 4rem;
+  }
+  .comments__comment {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .yubtub,
+.aside {
+    width: 100%;
+  }
+  .aside {
+    flex-wrap: wrap;
+    flex-direction: initial;
+    justify-content: center;
+    align-items: center;
+  }
+  .aside__video {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .aside {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .aside__video {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
