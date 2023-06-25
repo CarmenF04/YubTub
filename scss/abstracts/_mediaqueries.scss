@@ -1,29 +1,10 @@
-@media screen and (max-width: 1200px) {
-    .main {
-        padding: 4rem;
-    }
-}
+@media screen and (max-width: 600px) {
+    .aside {
+        flex-wrap: nowrap;
+        flex-direction: column;
 
-@media screen and (max-width: 1000px) {
-    .main {
-        padding: 3rem;
-    }
-
-    .video {
-        &__title {
-            font-size: 1.7rem;
-        }
-
-        &__button {
-            &--star {
-                font-size: 4rem;
-            }
-        }
-    }
-
-    .comments {
-        &__comment {
-            font-size: 1.8rem;
+        &__video {
+            width: 100%;
         }
     }
 }
@@ -52,13 +33,32 @@
     }
 }
 
-@media screen and (max-width: 600px) {
-    .aside {
-        flex-wrap: nowrap;
-        flex-direction: column;
+@media screen and (max-width: 1000px) {
+    .main {
+        padding: 3rem;
+    }
 
-        &__video {
-            width: 100%;
+    .video {
+        &__title {
+            font-size: 1.7rem;
         }
+
+        &__button {
+            &--star {
+                font-size: 4rem;
+            }
+        }
+    }
+
+    .comments {
+        &__comment {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main {
+        padding: 4rem;
     }
 }

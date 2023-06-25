@@ -293,7 +293,7 @@ class App {
     }
   
     swapVideos(videoNumber) {
-      const mainVideoElement = this.aside.yubtub.main.videoplayerElement;
+      const mainVideoElement = this.aside.yubtub.main.videoMainElement;
       const asideVideoElement = this.aside.yubtub.aside.nextVideo.recommendVideo;
   
       const mainVideoSrc = mainVideoElement.src;
